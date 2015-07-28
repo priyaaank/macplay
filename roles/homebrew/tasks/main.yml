@@ -1,0 +1,8 @@
+---
+- name: Update homebrew
+  command: brew update
+  when: ansible_os_family ==  'Darwin'
+
+- name: tap formulas for homebrew
+  homebrew_tap: "tap=caskroom/cask state=present"
+

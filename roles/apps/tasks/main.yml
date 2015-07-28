@@ -1,0 +1,14 @@
+---
+- name: Install apps
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - firefox
+    - google-chrome
+    - macvim
+    - dropbox
+    - handbrake
+    - skype
+    - vagrant
+    - vlc
+    - virtualbox
+  when: ansible_os_family == 'Darwin'

@@ -1,0 +1,8 @@
+---
+- name: install CLI tools
+  homebrew: name={{ item }} state=present
+  with_items:
+    - brew-cask
+    - wget
+    - heroku-toolbelt
+  when: ansible_os_family == 'Darwin'

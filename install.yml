@@ -1,0 +1,7 @@
+---
+- hosts: all
+  user: priyank
+  roles:
+#    - homebrew 
+    - cli_tools 
+    - apps 
