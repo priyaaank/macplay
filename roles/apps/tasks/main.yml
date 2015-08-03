@@ -2,13 +2,28 @@
 - name: Install apps
   homebrew_cask: name={{ item }} state=present
   with_items:
-    - firefox
-    - google-chrome
+    - java
     - macvim
+    - rightzoom
+    - caffeine
+    - alfred
+    - google-chrome
+    - vlc
+    - firefox
     - dropbox
     - handbrake
     - skype
     - vagrant
-    - vlc
     - virtualbox
+    - transmission
+    - evernote
+    - iterm2
+    - flickr-uploadr
+    - genymotion
+    - charles
+    - intellij-idea-ce
+    - filezilla
   when: ansible_os_family == 'Darwin'
+
+- name: Configure Janus for MacVim
+  shell: curl -Lo- https://bit.ly/janus-bootstrap | bash

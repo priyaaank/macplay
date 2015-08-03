@@ -5,4 +5,7 @@
     - brew-cask
     - wget
     - heroku-toolbelt
+    - android-sdk
+    - autojump
+    - zsh
   when: ansible_os_family == 'Darwin'
