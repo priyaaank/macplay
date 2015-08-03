@@ -25,5 +25,6 @@
     - filezilla
   when: ansible_os_family == 'Darwin'
 
-- name: Configure Janus for MacVim
-  shell: curl -Lo- https://bit.ly/janus-bootstrap | bash
+# TODO : Make this run conditionally. Also in an idempotent manner
+#- name: Configure Janus for MacVim
+#  shell: curl -Lo- https://bit.ly/janus-bootstrap | bash
