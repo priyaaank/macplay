@@ -23,6 +23,10 @@
     - charles
     - intellij-idea-ce
     - filezilla
+    #- xamarin
+    #- xamarin-android
+    #- xamarin-ios
+    #- xamarin-studio
   when: ansible_os_family == 'Darwin'
 
 # TODO : Make this run conditionally. Also in an idempotent manner

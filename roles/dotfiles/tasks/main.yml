@@ -1,0 +1,11 @@
+---
+
+#- name: Check if bash config exists
+  #stat: path=~/.bash_profile
+  #register: bash_config
+
+- name: Install bash profile config
+  copy: 
+    src: bash_profile
+    dest: ~/.bash_profile
+
