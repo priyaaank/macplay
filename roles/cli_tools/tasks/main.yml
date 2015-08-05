@@ -8,4 +8,5 @@
     - android-sdk
     - autojump
     - zsh
+    - gradle
   when: ansible_os_family == 'Darwin'
