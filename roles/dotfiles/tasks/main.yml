@@ -1,11 +1,14 @@
 ---
 
-#- name: Check if bash config exists
-  #stat: path=~/.bash_profile
-  #register: bash_config
+- name: Clone oh-my-zsh repo
+  git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
 
-- name: Install bash profile config
+- name: Install zsh config
   copy: 
-    src: bash_profile
-    dest: ~/.bash_profile
+    src: zshrc.in
+    dest: ~/.zshrc
+
+- name: Set zsh as default shell
+  command: chsh -s /bin/zsh
+
 
