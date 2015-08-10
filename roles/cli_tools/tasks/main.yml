@@ -9,4 +9,5 @@
     - autojump
     - zsh
     - gradle
+    - postgresql
   when: ansible_os_family == 'Darwin'
