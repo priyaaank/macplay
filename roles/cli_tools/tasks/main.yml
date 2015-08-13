@@ -11,3 +11,6 @@
     - gradle
     - postgresql
   when: ansible_os_family == 'Darwin'
+
+- name: install rvm and ruby
+  shell: curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.2
