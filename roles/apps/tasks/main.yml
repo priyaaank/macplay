@@ -13,21 +13,9 @@
     - dropbox
     - handbrake
     - skype
-    - vagrant
-    - virtualbox
-    - transmission
     - evernote
     - iterm2
-    - flickr-uploadr
-    - genymotion
-    - charles
     - intellij-idea-ce
-    - filezilla
-    - mono-mdk
-    - xamarin
-    - xamarin-android
-    - xamarin-ios
-    - xamarin-studio
   when: ansible_os_family == 'Darwin'
 
 # TODO : Make this run conditionally. Also in an idempotent manner
